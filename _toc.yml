@@ -1,0 +1,38 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+    - caption: "[week1] Intro to python1"
+      chapters:
+          - file: Lab_sessions/Lab_1_Python
+            title: Intro to Python
+    - caption: "[week2] Intro to python2"
+      chapters:
+      - file: Lab_sessions/Introduction_to_Python_Code_Lab
+        title: Intro to Python2
+    - caption: "[week3] Recursion"
+      chapters:
+          - file: Lab_sessions/3_Recursion_Lab
+            title: Recursion
+    - caption: "[week4] Array"
+      chapters:
+          - file: Lab_sessions/4_Array_Lab
+            title: Recursion
+    - caption: "[week5] Linked list"
+      chapters:
+          - file: Lab_sessions/5_Linked_List_Lab
+            title: Linked list
+    - caption: "[week6] Stack"
+      chapters:
+          - file: Lab_sessions/6_Stack_1
+            title: Stack1
+          - file: Lab_sessions/6_Stack_2
+            title: Stack2
+    - caption: "[week7] Queue"
+      chapters:
+          - file: Lab_sessions/7_Queue
+            title: Queue
+options:
+ numbered: true
