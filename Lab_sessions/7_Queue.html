@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -446,7 +446,7 @@ document.write(`
 <h2>Import the ListQueue class from the <a class="reference external" href="http://ListQueue.py">ListQueue.py</a> file<a class="headerlink" href="#import-the-listqueue-class-from-the-listqueue-py-file" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">DataStructureCode.ListQueue</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.ListQueue</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="n">queue</span> <span class="o">=</span> <span class="n">ListQueue</span><span class="p">()</span>
 <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Mon&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Tue&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Wed&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Thurs&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Fri&quot;</span><span class="p">)</span>
 <span class="n">queue</span><span class="o">.</span><span class="n">printQueue</span><span class="p">()</span>
@@ -459,7 +459,7 @@ document.write(`
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">DataStructureCode.ListQueue</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.ListQueue</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">queue</span> <span class="o">=</span> <span class="n">ListQueue</span><span class="p">()</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Mon&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Tue&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Wed&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Thurs&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Fri&quot;</span><span class="p">)</span>
 
@@ -476,34 +476,34 @@ document.write(`
 <h2>Create your <a class="reference external" href="http://LinkedQueue.py">LinkedQueue.py</a><a class="headerlink" href="#create-your-linkedqueue-py" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">DataStructureCode.CircularLinkedList</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.CircularLinkedList</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
-<span class="k">class</span> <span class="nc">LinkedQueue</span><span class="p">:</span>
-	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">LinkedQueue</span><span class="p">:</span>
+	<span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="n">CircularLinkedList</span><span class="p">()</span>
 
 
-	<span class="k">def</span> <span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span> <span class="c1"># insert an element to the end of the queue</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">enqueue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span> <span class="c1"># insert an element to the end of the queue</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 		
 
-	<span class="k">def</span> <span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># remove an element from the front of the queue</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">dequeue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># remove an element from the front of the queue</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 
-	<span class="k">def</span> <span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># returns the front node of the queue without deleting it</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">front</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># returns the front node of the queue without deleting it</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-	<span class="k">def</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span> <span class="c1"># returns true if queue is empty, else false.</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">isEmpty</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span> <span class="c1"># returns true if queue is empty, else false.</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">()</span>
 
-	<span class="k">def</span> <span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">dequeueAll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
 		<span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 
 
-	<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># clean the queue</span>
 		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
 
-	<span class="k">def</span> <span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># print elements from front to end</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">printQueue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># print elements from front to end</span>
 		<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
 			<span class="n">this</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 			<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">this</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -513,7 +513,7 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">DataStructureCode.LinkedQueue</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.LinkedQueue</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="n">queue</span> <span class="o">=</span> <span class="n">LinkedQueue</span><span class="p">()</span>
 <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Mon&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Tue&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Wed&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Thurs&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Fri&quot;</span><span class="p">)</span>
 <span class="n">queue</span><span class="o">.</span><span class="n">printQueue</span><span class="p">()</span>
@@ -540,12 +540,12 @@ Tue Wed Thurs Fri
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">DataStructureCode.LinkedQueue</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.LinkedQueue</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <span class="n">queue</span> <span class="o">=</span> <span class="n">LinkedQueue</span><span class="p">()</span>
 <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Mon&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Tue&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Wed&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Thurs&quot;</span><span class="p">);</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="s2">&quot;Fri&quot;</span><span class="p">)</span>
 <span class="n">queue</span><span class="o">.</span><span class="n">printQueue</span><span class="p">()</span>
 
-<span class="k">def</span> <span class="nf">reverseQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">reverseQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">queue</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
         <span class="k">return</span>
     <span class="n">item</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">dequeue</span><span class="p">()</span>
@@ -574,10 +574,10 @@ Fri Thurs Wed Tue Mon
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">DataStructureCode.ListStack</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">DataStructureCode.ListQueue</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.ListStack</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.ListQueue</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
-<span class="k">def</span> <span class="nf">isPalindrome</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">isPalindrome</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
     
 
 

@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -774,7 +774,7 @@ Exit while loop as i is equal to 3
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
     <span class="k">return</span><span class="p">(</span><span class="n">food</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">]</span>
 <span class="n">output</span> <span class="o">=</span> <span class="n">my_function</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
@@ -794,7 +794,7 @@ Exit while loop as i is equal to 3
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># importing the required module</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="c1"># create data</span>
 <span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
@@ -812,7 +812,17 @@ Exit while loop as i is equal to 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/e056547cd5f5005e8156f0e33229f0c6954c3e502c6b98e79e46e46c04ede91c.png" src="../_images/e056547cd5f5005e8156f0e33229f0c6954c3e502c6b98e79e46e46c04ede91c.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">15</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># importing the required module</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># create data</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -828,7 +838,7 @@ Exit while loop as i is equal to 3
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span> <span class="c1"># a class in its simplest form</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span> <span class="c1"># a class in its simplest form</span>
   <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Ewha&quot;</span> <span class="c1"># attribute: a variable that belong to a class</span>
   <span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
 <span class="n">myobject</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span> <span class="c1"># an object in its simplest form</span>
@@ -852,10 +862,10 @@ I&#39;m 25 years old
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span>
   <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Ewha&quot;</span>
   <span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
-  <span class="k">def</span> <span class="nf">myname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># a function that belongs to the class</span>
+  <span class="k">def</span><span class="w"> </span><span class="nf">myname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1"># a function that belongs to the class</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="s2">&quot;years old&quot;</span><span class="p">)</span>
 <span class="n">myobject</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
@@ -883,12 +893,12 @@ Access age variable inside object: 25
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
-  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span>
+  <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
 
-  <span class="k">def</span> <span class="nf">myname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+  <span class="k">def</span><span class="w"> </span><span class="nf">myname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="s2">&quot;years old&quot;</span><span class="p">)</span>
 
@@ -901,7 +911,7 @@ Access age variable inside object: 25
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>My name is Amy
 I&#39;m 55 years old
-&lt;__main__.MyClass object at 0x107a26900&gt;
+&lt;__main__.MyClass object at 0x789f405dfe50&gt;
 </pre></div>
 </div>
 </div>
@@ -911,12 +921,12 @@ I&#39;m 55 years old
 <h2>Default values for <code class="docutils literal notranslate"><span class="pre">__init__()</span></code> Function<a class="headerlink" href="#default-values-for-init-function" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
-  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Ewha&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span>
+  <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Ewha&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
 
-  <span class="k">def</span> <span class="nf">myname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+  <span class="k">def</span><span class="w"> </span><span class="nf">myname</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="s2">&quot;years old&quot;</span><span class="p">)</span>
 
@@ -940,12 +950,12 @@ I&#39;m 25 years old
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
-  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">hey</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Ewha&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span>
+  <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="n">hey</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Ewha&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">):</span>
     <span class="n">hey</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
     <span class="n">hey</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
 
-  <span class="k">def</span> <span class="nf">myname</span><span class="p">(</span><span class="n">hey</span><span class="p">):</span>
+  <span class="k">def</span><span class="w"> </span><span class="nf">myname</span><span class="p">(</span><span class="n">hey</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is&quot;</span><span class="p">,</span> <span class="n">hey</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m&quot;</span><span class="p">,</span> <span class="n">hey</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="s2">&quot;years old&quot;</span><span class="p">)</span>
 
@@ -971,22 +981,16 @@ I&#39;m 55 years old
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">myobject</span><span class="p">)</span>
 
-<span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
-  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="p">:</span>
+  <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
 
-  <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+  <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;My name is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> and I&#39;m </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old.&quot;</span>
 
 <span class="n">myobject</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">55</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">myobject</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;__main__.MyClass object at 0x107a25340&gt;
-My name is Apple and I&#39;m 55 years old.
 </pre></div>
 </div>
 </div>
@@ -1006,12 +1010,6 @@ My name is Apple and I&#39;m 55 years old.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>age before modifying =  55
-age after modifying =  40
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="module-importing">
@@ -1023,11 +1021,11 @@ age after modifying =  40
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># &lt;mymodule.py&gt;</span>
-<span class="k">def</span> <span class="nf">myname</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myname</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a function inside of a file mymodule.py&quot;</span><span class="p">)</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">myage</span><span class="p">(</span><span class="n">age</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myage</span><span class="p">(</span><span class="n">age</span><span class="p">):</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="s2">&quot;years old&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1038,21 +1036,16 @@ age after modifying =  40
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mymodule</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">mymodule</span>
 <span class="n">mymodule</span><span class="o">.</span><span class="n">myname</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Ewha&quot;</span><span class="p">)</span>
 <span class="n">mymodule</span><span class="o">.</span><span class="n">myage</span><span class="p">(</span><span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">24</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">mymodule</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">mymodule</span><span class="o">.</span><span class="n">myname</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Ewha&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">mymodule</span><span class="o">.</span><span class="n">myage</span><span class="p">(</span><span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;mymodule&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This is a function inside of a file mymodule.py
+My name is Ewha
+I&#39;m 25 years old
 </pre></div>
 </div>
 </div>
@@ -1065,7 +1058,7 @@ age after modifying =  40
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mymodule</span> <span class="kn">import</span> <span class="n">myname</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">mymodule</span><span class="w"> </span><span class="kn">import</span> <span class="n">myname</span>
 <span class="n">mymodule</span><span class="o">.</span><span class="n">myname</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Ewha&quot;</span><span class="p">)</span>
 <span class="c1"># mymodule.myage(age=25) # a function myage is not imported</span>
 </pre></div>
@@ -1080,7 +1073,7 @@ age after modifying =  40
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mymodule</span> <span class="k">as</span> <span class="nn">md</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">mymodule</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">md</span>
 <span class="n">md</span><span class="o">.</span><span class="n">myname</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Ewha&quot;</span><span class="p">)</span>
 <span class="n">md</span><span class="o">.</span><span class="n">myage</span><span class="p">(</span><span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
