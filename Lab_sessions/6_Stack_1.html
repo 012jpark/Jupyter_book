@@ -28,13 +28,24 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=720ed60b" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=d2032c04" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=720ed60b" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/theme.css?v=a243ae73" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/bootstrap.css?v=b4a3e8ba" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?v=f4fbef65" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -58,6 +69,21 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Lab_sessions/6_Stack_1';</script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/searchtools.js?v=63a53a7d"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/language_data.js?v=d4673a71"></script>
+    <script src="../_static/copybutton_funcs.js?v=776a791e"></script>
+    <script src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/scripts/bootstrap.js?v=7583a70d"></script>
+    <script src="../_static/scripts/pydata-sphinx-theme.js?v=4bc35cb3"></script>
+    <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?v=4e4fcec4"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="📘 Stack2" href="6_Stack_2.html" />
@@ -426,6 +452,7 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises!</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-stack">Reverse: Stack</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fun-example-in-your-python-try-the-below">Fun Example: in your Python, try the below</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-question">New Question</a></li>
 </ul>
 </li>
 </ul>
@@ -460,15 +487,14 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Import the ListStack class from the ListNode.py file</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.ListStack</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">stack</span> <span class="o">=</span> <span class="n">ListStack</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span> <span class="n">stack</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;DataStructureCode&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Elements from top to bottom: 
+400 300 200 100 
+Top after pushes:  400
+Remove an element from top:  400
+Elements from top to bottom: 
+300 200 100 
+Is the stack empty? False
+Number of element in the stack? 3
 </pre></div>
 </div>
 </div>
@@ -488,6 +514,14 @@ document.write(`
 <span class="n">stack</span><span class="o">.</span><span class="n">printStack</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Is the stack empty?&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of element in the stack?&#39;</span><span class="p">,</span> <span class="n">stack</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Elements from top to bottom:  400 300 200 100 Top after pushes:  400
+Remove an element from top:  400
+Elements from top to bottom:  300 200 100 Is the stack empty? False
+Number of element in the stack? 3
 </pre></div>
 </div>
 </div>
@@ -595,6 +629,45 @@ Elements from top to bottom:
 </div>
 </div>
 </section>
+<section id="new-question">
+<h2>New Question<a class="headerlink" href="#new-question" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>compare linked stack elements</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">DataStructureCode.LinkedStack</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">s1</span> <span class="o">=</span> <span class="n">LinkedStack</span><span class="p">()</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="n">LinkedStack</span><span class="p">()</span>
+<span class="n">s1</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="n">s1</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span> <span class="n">s1</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span> <span class="n">s1</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>
+<span class="n">s2</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span> <span class="n">s2</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">200</span><span class="p">);</span> <span class="n">s2</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span> <span class="n">s2</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">compare</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">if</span> <span class="n">s1</span><span class="o">.</span><span class="n">size</span><span class="p">()</span> <span class="o">!=</span> <span class="n">s2</span><span class="o">.</span><span class="n">size</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;length is not same&quot;</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">s1</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">s2</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">s1</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="o">==</span> <span class="n">s2</span><span class="o">.</span><span class="n">pop</span><span class="p">():</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">result</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;same?:&quot;</span><span class="p">,</span> <span class="n">compare</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>same?: [True, False, True, True]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -669,6 +742,7 @@ Elements from top to bottom:
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises!</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reverse-stack">Reverse: Stack</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fun-example-in-your-python-try-the-below">Fun Example: in your Python, try the below</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-question">New Question</a></li>
 </ul>
 </li>
 </ul>
